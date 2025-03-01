@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1</title>
+    <style>
+        body {
+            background-color: #E0E0E0;
+        }
+        header {
+            background-color: #FFFFFF;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 1s, color 1s;
+        }
+        header:hover {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        footer {
+            background-color: #000000;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        footer.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Parcial 1</h2>
+    </header>
+
+    <p>
+        Existen muchas variaciones de pasajes de Lorem Ipsum disponibles, 
+        pero la mayoría han sufrido alguna alteración, ya sea por humor 
+        añadido o palabras aleatorias que no parecen ni un poco creíbles. 
+        Si va a utilizar un pasaje de Lorem Ipsum, debe asegurarse de que 
+        no haya nada vergonzoso escondido en medio del texto. Todos los 
+        generadores de Lorem Ipsum en Internet tienden a repetir fragmentos 
+        predefinidos según sea necesario, lo que convierte a este en el 
+        primer generador verdadero en Internet. Utiliza un diccionario de más 
+        de 200 palabras latinas, combinado con un puñado de estructuras de oraciones 
+        modelo, para generar un Lorem Ipsum que parezca razonable. Por lo tanto, el 
+        Lorem Ipsum generado siempre está libre de repeticiones, humor añadido o palabras 
+        no características, etc.Existen muchas variaciones de pasajes de Lorem Ipsum disponibles, 
+        pero la mayoría han sufrido alguna alteración, ya sea por humor 
+        añadido o palabras aleatorias que no parecen ni un poco creíbles. 
+        Si va a utilizar un pasaje de Lorem Ipsum, debe asegurarse de que 
+        no haya nada vergonzoso escondido en medio del texto. Todos los 
+        generadores de Lorem Ipsum en Internet tienden a repetir fragmentos 
+        predefinidos según sea necesario, lo que convierte a este en el 
+        primer generador verdadero en Internet. Utiliza un diccionario de más 
+        de 200 palabras latinas, combinado con un puñado de estructuras de oraciones 
+        modelo, para generar un Lorem Ipsum que parezca razonable. Por lo tanto, el 
+        Lorem Ipsum generado siempre está libre de repeticiones, humor añadido o palabras 
+        no características, etc.Existen muchas variaciones de pasajes de Lorem Ipsum disponibles, 
+        pero la mayoría han sufrido alguna alteración, ya sea por humor 
+        añadido o palabras aleatorias que no parecen ni un poco creíbles. 
+        Si va a utilizar un pasaje de Lorem Ipsum, debe asegurarse de que 
+        no haya nada vergonzoso escondido en medio del texto. Todos los 
+        generadores de Lorem Ipsum en Internet tienden a repetir fragmentos 
+        predefinidos según sea necesario, lo que convierte a este en el 
+        primer generador verdadero en Internet. Utiliza un diccionario de más 
+        de 200 palabras latinas, combinado con un puñado de estructuras de oraciones 
+        modelo, para generar un Lorem Ipsum que parezca razonable. Por lo tanto, el 
+        Lorem Ipsum generado siempre está libre de repeticiones, humor añadido o palabras 
+        no características, etc.
+    </p>
+    <footer id="footer">
+        <span>Shirley Dayana Morales Caracun</span>
+        <span>DESARROLLO WEB -UMES-2025 </span>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.getElementById('footer');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footer.classList.remove('hidden');
+            } else {
+                footer.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
